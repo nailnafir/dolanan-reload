@@ -10,6 +10,7 @@ import '../styles/sign-up-success.css'
 import '../styles/sidebar.css'
 import '../styles/overview.css'
 import '../styles/transactions.css'
+import '../styles/transactions-detail.css'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
