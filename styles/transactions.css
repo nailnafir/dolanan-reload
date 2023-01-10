@@ -35,7 +35,7 @@
     background-color: #FFFFFF;
     padding: 1.25rem 1.875rem;
     border-radius: 1rem;
-    max-width: 1047px;
+    max-width: 1080px;
 }
 
 .transactions .latest-transaction .game-title-header{
@@ -45,7 +45,7 @@
 
 .transactions .latest-transaction .game-title{
     white-space: nowrap; 
-    width: 135px; 
+    width: 300px; 
     overflow: hidden;
     text-overflow: ellipsis; 
 }
