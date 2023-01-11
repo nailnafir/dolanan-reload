@@ -1,17 +1,11 @@
-import { type } from "os";
-import { HTMLInputTypeAttribute } from "react";
-
-interface InputProps {
+export interface InputProps {
   label: string;
-  type: HTMLInputTypeAttribute;
+  inputType: "text" | "password" | "email" | "tel" | "number";
+  idName: string;
 }
 
-export default function Input(props: InputProps) {
-  const { label, ...nativeProps } = props;
-  let id = 1;
-  while (id < 100) {
-    id++;
-  }
+export default function Input(props: Partial<InputProps>) {
+  const { label, inputType, idName, ...nativeProps } = props;
   
   return (
     <>
@@ -22,11 +16,11 @@ export default function Input(props: InputProps) {
         {label}
       </label>
       <input
-        {...type}
+        type={inputType}
         className="form-control rounded-pill text-lg"
-        id={`${type}-${id}`}
-        name={`${type}`}
-        aria-describedby={`${type}`}
+        id={idName}
+        name={inputType}
+        aria-describedby={inputType}
         placeholder="Enter your name"
         {...nativeProps}
       />
