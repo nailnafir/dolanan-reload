@@ -1,4 +1,4 @@
-interface RowItemProps {
+export interface RowItemProps {
     label: string;
     value: string | number;
     className: string;

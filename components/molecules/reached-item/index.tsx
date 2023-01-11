@@ -1,4 +1,4 @@
-interface ReachedItemProps {
+export interface ReachedItemProps {
     title: string;
     subtitle: string;
 }
